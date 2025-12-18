@@ -1,9 +1,4 @@
-from app.task_1.routes import app, Routes
+from app.task_1.routes import app
 
-name = input("Введите имя: ")
-num = int(input("Введите числo: "))
-text = input("Введите строку: ")
-
-route_data = Routes(name, num, text)
-
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
